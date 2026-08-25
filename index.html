@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>সংবাদ.কম - সত্য সংবাদ সবার আগে</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- নেভিগেশন বার -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <div class="logo">
+                    <h1>🗞️ সংবাদ.কম</h1>
+                    <p>সত্য সংবাদ সবার আগে</p>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#home">হোম</a></li>
+                    <li><a href="#news">সংবাদ</a></li>
+                    <li><a href="#about">সম্পর্কে</a></li>
+                    <li><a href="#contact">যোগাযোগ</a></li>
+                    <li><a href="login.html" class="btn-login">চেয়ারম্যান</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- হিরো সেকশন -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h2>স্বাগতম সংবাদ.কম এ</h2>
+            <p>বাংলাদেশের সবচেয়ে নির্ভরযোগ্য এবং সত্য সংবাদের উৎস</p>
+            <a href="#news" class="btn btn-primary">সর্বশেষ সংবাদ পড়ুন</a>
+        </div>
+    </section>
+
+    <!-- সংবাদ সেকশন -->
+    <section class="news-section" id="news">
+        <div class="container">
+            <h2>সর্বশেষ সংবাদ</h2>
+            <div class="filter-buttons">
+                <button class="filter-btn active" onclick="filterNews('all')">সব</button>
+                <button class="filter-btn" onclick="filterNews('রাজনীতি')">রাজনীতি</button>
+                <button class="filter-btn" onclick="filterNews('খেলা')">খেলা</button>
+                <button class="filter-btn" onclick="filterNews('বিনোদন')">বিনোদন</button>
+                <button class="filter-btn" onclick="filterNews('প্রযুক্তি')">প্রযুক্তি</button>
+            </div>
+            <div class="news-grid" id="newsContainer">
+                <!-- সংবাদ এখানে লোড হবে -->
+            </div>
+        </div>
+    </section>
+
+    <!-- সম্পর্কে সেকশন -->
+    <section class="about-section" id="about">
+        <div class="container">
+            <h2>আমাদের সম্পর্কে</h2>
+            <div class="about-content">
+                <p>সংবাদ.কম হল বাংলাদেশের অন্যতম বিশ্বস্ত অনলাইন নিউজ পোর্টাল। আমরা সত্য এবং নির্ভরযোগ্য সংবাদ প্রকাশে বিশ্বাসী এবং প্রতিশ্রুতিবদ্ধ।</p>
+                
+                <div class="team-info">
+                    <h3>আমাদের সম্পাদকীয় দল</h3>
+                    <div class="team-members">
+                        <div class="team-member">
+                            <h4>প্রকাশক</h4>
+                            <p>মোঃ রিপন ইসলাম</p>
+                        </div>
+                        <div class="team-member">
+                            <h4>সম্পাদক</h4>
+                            <p>মোঃ রিপন ইসলাম</p>
+                        </div>
+                        <div class="team-member">
+                            <h4>সহকারী সম্পাদক</h4>
+                            <p>মোঃ রিয়াজ ইসলাম</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mission">
+                    <h3>আমাদের লক্ষ্য</h3>
+                    <ul>
+                        <li>✓ সত্য এবং নির্ভরযোগ্য সংবাদ প্রকাশ</li>
+                        <li>✓ জনসাধারণকে সঠিক তথ্য প্রদান</li>
+                        <li>✓ সাংবাদিকতার নৈতিক মান বজায় রাখা</li>
+                        <li>✓ সমাজের উন্নয়নে অবদান রাখা</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- যোগাযোগ সেকশন -->
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <h2>যোগাযোগ করুন</h2>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <p>+880 1313-395664</p>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <p>info@songbad.com</p>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>নীলফামারী, বাংলাদেশ</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ফুটার -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; ২০২৪ সংবাদ.কম - সর্বস্বত্ব সংরক্ষিত</p>
+            <p>প্রকাশক: মোঃ রিপন ইসলাম | সম্পাদক: মোঃ রিপন ইসলাম | সহকারী সম্পাদক: মোঃ রিয়াজ ইসলাম</p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
